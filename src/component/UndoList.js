@@ -1,6 +1,6 @@
 import React from "react";
 
-export default class List extends React.Component {
+export default class UndoList extends React.Component {
     render() {
         const { list } = this.props;
 

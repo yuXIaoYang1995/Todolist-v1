@@ -1,8 +1,8 @@
 import React from "react"
 import ReactDom from "react-dom"
 
-import To from "./component/To"
-import List from "./component/List"
+import Header from "./component/Header"
+import UndoList from "./component/UndoList"
 import './index.css'
 
 class Todolist extends React.Component{
@@ -36,8 +36,8 @@ class Todolist extends React.Component{
     render(){
         return (
             <div>
-                <To update={this.update.bind(this)} list={this.state.list}></To> 
-                <List list={this.state.list}></List> 
+                <Header update={this.update.bind(this)} list={this.state.list}></Header> 
+                <UndoList list={this.state.list}></UndoList> 
             </div>
         )
     }
